@@ -5,61 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeoSwitch - Coming Soon</title>
     <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --accent: #4fc3f7;
+            --text: #333333;
+            --light: #f8f9fa;
+        }
+        
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 50px 20px;
             line-height: 1.6;
         }
+        
         .container {
-            max-width: 600px;
-            margin: 0 auto;
+            max-width: 800px;
+            padding: 2rem;
         }
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .logo {
-            font-size: 3rem;
-            margin-bottom: 30px;
+        
+        .construction-badge {
+            background-color: #ffc107;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
             font-weight: bold;
-            color: #4a6baf;
-        }
-        .email-link {
             display: inline-block;
-            background-color: #4a6baf;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .email-link:hover {
-            background-color: #3a5a9f;
-        }
-        .footer {
-            margin-top: 50px;
-            color: #7f8c8d;
+            margin-bottom: 1.5rem;
             font-size: 0.9rem;
         }
+        
+        h1 {
+            color: var(--secondary);
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        p.lead {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+            opacity: 0.9;
+        }
+        
+        .construction-icon {
+            font-size: 5rem;
+            margin: 2rem 0;
+            color: var(--primary);
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary);
+            box-shadow: 0 4px 15px rgba(74, 111, 165, 0.2);
+        }
+        
+        .contact-btn:hover {
+            background-color: transparent;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(74, 111, 165, 0.3);
+        }
+        
+        footer {
+            margin-top: 3rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p.lead {
+                font-size: 1.1rem;
+            }
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="logo">neoswitch.site</div>
-        <h1>We're Building Something Amazing!</h1>
-        <p>Our platform is currently under construction as we work to create the perfect solution for your needs.</p>
-        <p>We're excited to launch soon and deliver an experience that exceeds your expectations.</p>
-        
-        <a href="mailto:contact@neoswitch.site" class="email-link">Contact Us</a>
-        
-        <div class="footer">
+        <div class="construction-badge">
+            <i class="fas fa-hard-hat"></i> UNDER CONSTRUCTION
         </div>
+        
+        <h1>Fueling Your Creative Journey</h1>
+        
+        <p class="lead">
+            We're building a platform to nurture your inspirations and bring ideas to life. 
+            Our website will be launching soon to accompany your creative process.
+        </p>
+        
+        <div class="construction-icon">
+            <i class="fas fa-tools"></i>
+        </div>
+        
+        <p>
+            Stay updated as we prepare something truly special for innovators and creators like you.
+        </p>
+        
+        <a href="mailto:contact@neoswitch.site" class="contact-btn">
+            <i class="fas fa-envelope"></i> Contact Us
+        </a>
     </div>
+    
+    <footer>
+        &copy; 2023 NeoSwitch. All Rights Reserved.
+    </footer>
 </body>
 </html>
